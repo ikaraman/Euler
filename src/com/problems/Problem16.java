@@ -13,6 +13,13 @@ public class Problem16 {
 
             String strNumber = number.toString();
             //System.out.println(strNumber);
+
+            int total = 0;
+            for ( int i = 0; i < strNumber.length(); i++ ) {
+                int current = Character.getNumericValue(strNumber.charAt(i));
+                total = total + current;
+            }
+            System.out.println(total);
         }
     }
 
